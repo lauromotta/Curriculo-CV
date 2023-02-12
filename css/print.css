@@ -1,0 +1,16 @@
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printable, #printable * {
+    visibility: visible;
+    }
+
+    h1 {
+      font-size: 1pt;
+    }
+    p {
+      text-indent: 0;
+    }
+  }
