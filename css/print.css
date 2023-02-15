@@ -1,8 +1,6 @@
 
 @media print {
-    body * {
-        visibility: hidden;
-    }
+
     #printable, #printable * {
     visibility: visible;
     }
@@ -13,4 +11,39 @@
     p {
       text-indent: 0;
     }
+    .center-div {
+      position: absolute;
+      min-width: 800px;
+      max-width: 900;
+      left: 0;
+      right: 0;
+      padding: 20px;
+
+   }
+   .left-div, .right-div{
+    
+    border: 0px solid #000;
+    /* height: 1100px; */
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+.resumo-titulo{
+  text-indent: 0.8em;
+
+
+}
+.titule-trab{
+  color: black;
+
+  /* border: 0.5px solid #000; */
+  border-bottom: 0.5px solid #000;
+
+
+}
+
+
+
   }
