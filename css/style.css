@@ -29,12 +29,17 @@ img {
     margin: 0px 0px 0px 20px;
 
 
- }
+}
 
- p{
+.left-div p{
 
     text-indent: 0.8em;
- }
+    font-size: 13px;
+}
+
+ul {
+    font-size: 13px;
+}
 
  
 
@@ -128,10 +133,6 @@ img {
 
   }
 
-.dados{
-
-    color: white;
-}
 
 
 .date-status{
@@ -188,3 +189,31 @@ img {
     /* font-size: 10px; */
     /* margin-top: 0px; */
 }
+
+.dados{
+    color: white;
+}
+
+.dados h3{
+    font-size: 18px;
+
+}
+
+.dados p{
+    margin: 10px;
+    font-size: 11px;
+}
+ul:nth-child(1) {
+    
+    list-style-type: square;
+    
+}
+
+ul>ul{
+    
+    color: blue;
+    font-size: 12px;
+    /* list-style-type: none; */
+    list-style-type:'- ';
+}
+
