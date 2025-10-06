@@ -1,54 +1,114 @@
+﻿@page {
+    margin: 18mm;
+}
 
 @media print {
-
-    #printable, #printable * {
-    visibility: visible;
+    body {
+        background: #ffffff !important;
+        padding: 0 !important;
+        color: #111827;
     }
 
-    h1 {
-      font-size: 1pt;
+    .page {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        flex-direction: column;
     }
-    p {
-      text-indent: 0;
+
+    .sidebar {
+        width: 100%;
+        background: #ffffff;
+        color: #111827;
+        border: none;
+        padding: 18mm 0 10mm;
     }
-    .center-div {
-      position: absolute;
-      min-width: 800px;
-      max-width: 900;
-      left: 0;
-      right: 0;
-      padding: 20px;
 
-   }
-   .left-div, .right-div{
-    
-    border: 0px solid #000;
-    /* height: 1100px; */
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    .sidebar-toggle,
+    .sidebar-toggle-label {
+        display: none !important;
+    }
 
+    .sidebar-content {
+        gap: 18mm;
+    }
 
+    .content-toolbar,
+    .quick-nav,
+    .toggle-courses,
+    .back-to-top,
+    .toast,
+    .copy-btn {
+        display: none !important;
+    }
+
+    .profile-text h1 {
+        font-size: 22pt;
+    }
+
+    .tagline {
+        color: #475569;
+    }
+
+    .sidebar-section h2 {
+        color: #111827;
+    }
+
+    .info-list li {
+        grid-template-columns: 20px 1fr;
+        gap: 8px;
+    }
+
+    .info-list li i {
+        color: #0f172a;
+    }
+
+    .competencies-list li {
+        background: #edf2f7;
+        border-color: #cbd5e1;
+        color: #1f2937;
+    }
+
+    .content {
+        background: #ffffff;
+        padding: 12mm 0 16mm;
+        gap: 18mm;
+    }
+
+    .spotlight,
+    .experience-item,
+    .education-item {
+        background: #ffffff;
+        box-shadow: none;
+        border: 1px solid #d4d4d8;
+    }
+
+    .experience-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .experience-meta li {
+        background: #e2e8f0;
+        color: #1f2937;
+    }
+
+    .course-list {
+        column-count: 2;
+        column-gap: 14mm;
+    }
+
+    .course-list[data-collapsed="true"] li {
+        display: list-item !important;
+    }
+
+    .course-list li::before {
+        color: #0f172a;
+    }
+
+    a {
+        color: #111827 !important;
+        text-decoration: none !important;
+    }
 }
-.resumo-titulo{
-  text-indent: 0.8em;
-
-
-}
-.titule-trab{
-  color: black;
-
-  /* border: 0.5px solid #000; */
-  border-bottom: 0.5px solid #000;
-}
-
-.dados{
-
-  color: black;
-}
-
-
-
-
-
-  }
