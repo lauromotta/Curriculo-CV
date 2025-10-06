@@ -1,6 +1,6 @@
 ﻿# Currículo - Lauro Motta
 
-Este projeto contém a versão digital do currículo de Lauro Pereira da Motta, criada para ser responsiva, acessível e com visual contemporâneo.
+Este projeto contém a versão digital do currículo, criada para ser responsiva, acessível e com visual contemporâneo.
 
 ## Destaques
 - **Layout moderno** com tipografia Poppins, cartões de experiência e grid responsivo para educação e cursos.
