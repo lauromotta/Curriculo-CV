@@ -1,5 +1,5 @@
 ﻿@page {
-    margin: 18mm;
+    margin: 14mm;
 }
 
 @media print {
@@ -14,6 +14,55 @@
         box-shadow: none;
         border: none;
         border-radius: 0;
+    }
+
+    /* Header em impressão */
+    .site-header {
+        background: #ffffff !important;
+        color: #111827;
+        padding: 0 0 8mm;
+        border-bottom: 2px solid #cbd5e1;
+    }
+
+    .site-header .avatar {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #cbd5e1;
+        box-shadow: none;
+    }
+
+    .site-header__text h1 {
+        font-size: 22pt;
+    }
+
+    .site-header .tagline {
+        color: #2563eb;
+    }
+
+    .header-contact {
+        color: #1f2937;
+    }
+
+    .header-contact li i {
+        color: #0f172a;
+    }
+
+    .header-contact a {
+        color: #111827 !important;
+        text-decoration: none !important;
+    }
+
+    .site-header__actions,
+    .quick-nav,
+    .back-to-top,
+    .toast,
+    .copy-btn,
+    .sidebar-toggle,
+    .sidebar-toggle-label {
+        display: none !important;
+    }
+
+    .page-body {
         flex-direction: column;
     }
 
@@ -22,69 +71,119 @@
         background: #ffffff;
         color: #111827;
         border: none;
-        padding: 18mm 0 10mm;
-    }
-
-    .sidebar-toggle,
-    .sidebar-toggle-label {
-        display: none !important;
+        padding: 6mm 0;
     }
 
     .sidebar-content {
-        gap: 18mm;
-    }
-
-    .content-toolbar,
-    .quick-nav,
-    .toggle-courses,
-    .back-to-top,
-    .toast,
-    .copy-btn {
-        display: none !important;
-    }
-
-    .profile-text h1 {
-        font-size: 22pt;
-    }
-
-    .tagline {
-        color: #475569;
+        gap: 8mm;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10mm;
     }
 
     .sidebar-section h2 {
         color: #111827;
+        border-color: #2563eb;
     }
 
     .info-list li {
         grid-template-columns: 20px 1fr;
-        gap: 8px;
+        gap: 6px;
+        color: #1f2937;
     }
 
     .info-list li i {
         color: #0f172a;
     }
 
-    .competencies-list li {
+    .info-list li strong {
+        color: #111827;
+    }
+
+    .skill-tag {
         background: #edf2f7;
         border-color: #cbd5e1;
         color: #1f2937;
     }
 
-    .content {
-        background: #ffffff;
-        padding: 12mm 0 16mm;
-        gap: 18mm;
+    .skill-tag--primary {
+        background: #0d3b66 !important;
+        color: #ffffff !important;
+        border-color: #0d3b66;
     }
 
-    .spotlight,
+    .skill-tag i {
+        color: #2563eb;
+    }
+
+    .skill-tag--primary i {
+        color: #ffffff;
+    }
+
+    .other-skills summary {
+        color: #1f2937;
+    }
+
+    .other-skills .info-list li {
+        color: #1f2937;
+    }
+
+    .content {
+        background: #ffffff;
+        padding: 6mm 0 4mm;
+        gap: 8mm;
+    }
+
+    .quick-nav {
+        display: none !important;
+    }
+
+    .spotlight {
+        background: #0d3b66 !important;
+        color: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .spotlight h2 {
+        color: #ffffff;
+    }
+
+    .spotlight-value {
+        color: #ffffff;
+    }
+
+    .spotlight-item {
+        background: #0f3a5f;
+        border-color: #1e4a73;
+    }
+
     .experience-item,
+    .project-card,
+    .course-group,
     .education-item {
         background: #ffffff;
         box-shadow: none;
         border: 1px solid #d4d4d8;
     }
 
-    .experience-item:hover {
+    .project-card--featured {
+        border: 2px solid #2563eb;
+    }
+
+    .project-card__badge {
+        background: #2563eb;
+        color: #ffffff;
+    }
+
+    .project-card__stack li {
+        background: #e0e7ff;
+        color: #1e3a8a;
+        border-color: #c7d2fe;
+    }
+
+    .experience-item:hover,
+    .project-card:hover {
         transform: none;
         box-shadow: none;
     }
@@ -94,17 +193,12 @@
         color: #1f2937;
     }
 
-    .course-list {
-        column-count: 2;
-        column-gap: 14mm;
+    .experience-list strong {
+        color: #0d3b66;
     }
 
-    .course-list[data-collapsed="true"] li {
-        display: list-item !important;
-    }
-
-    .course-list li::before {
-        color: #0f172a;
+    .section h2 {
+        scroll-margin-top: 0;
     }
 
     a {

@@ -1,0 +1,10 @@
+# PDFs exportados da Catho (fonte de referência, não fazem parte do site)
+*.pdf
+
+# Arquivos temporários de renderização
+page_*.png
+v2_page_*.png
+
+# Sistema operacional
+Thumbs.db
+.DS_Store

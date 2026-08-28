@@ -2,11 +2,8 @@
     const body = document.body;
     const themeToggle = document.querySelector('.theme-toggle');
     const themeIcon = themeToggle?.querySelector('i');
-    const themeLabel = themeToggle?.querySelector('span');
     const downloadButton = document.querySelector('.download-toggle');
     const quickNavButtons = Array.from(document.querySelectorAll('.quick-nav__item'));
-    const courseList = document.querySelector('.course-list');
-    const courseToggle = document.querySelector('.toggle-courses');
     const copyButtons = Array.from(document.querySelectorAll('.copy-btn'));
     const toast = document.querySelector('.toast');
     const toastMessage = toast?.querySelector('.toast__message');
@@ -16,16 +13,14 @@
     let toastTimeoutId;
 
     function updateThemeButton(theme) {
-        if (!themeToggle || !themeIcon || !themeLabel) return;
+        if (!themeToggle || !themeIcon) return;
         if (theme === 'dark') {
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun');
-            themeLabel.textContent = 'Modo claro';
             themeToggle.setAttribute('aria-pressed', 'true');
         } else {
             themeIcon.classList.remove('fa-sun');
             themeIcon.classList.add('fa-moon');
-            themeLabel.textContent = 'Modo escuro';
             themeToggle.setAttribute('aria-pressed', 'false');
         }
     }
@@ -70,18 +65,16 @@
     });
 
     if (quickNavButtons.length) {
-        const observerOptions = {
-            threshold: 0.4,
-            rootMargin: '-120px 0px -55% 0px',
-        };
-
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (!entry.isIntersecting) return;
                 const button = quickNavButtons.find((btn) => btn.dataset.target === `#${entry.target.id}`);
                 if (button) setActiveQuickNav(button);
             });
-        }, observerOptions);
+        }, {
+            threshold: 0.4,
+            rootMargin: '-80px 0px -55% 0px',
+        });
 
         quickNavButtons.forEach((btn) => {
             const target = btn.dataset.target ? document.querySelector(btn.dataset.target) : null;
@@ -90,32 +83,6 @@
 
         if (quickNavButtons[0]) {
             setActiveQuickNav(quickNavButtons[0]);
-        }
-    }
-
-    courseToggle?.addEventListener('click', () => {
-        if (!courseList) return;
-        const expanded = courseList.dataset.collapsed === 'true';
-        courseList.dataset.collapsed = expanded ? 'false' : 'true';
-        courseToggle.setAttribute('aria-expanded', String(expanded));
-        const label = courseToggle.querySelector('.toggle-courses__label');
-        if (label) {
-            label.textContent = expanded ? 'Ver menos cursos' : 'Ver todos os cursos';
-        }
-    });
-
-    function fallbackCopy(text) {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.focus();
-        textarea.select();
-        try {
-            document.execCommand('copy');
-        } finally {
-            document.body.removeChild(textarea);
         }
     }
 
@@ -138,15 +105,15 @@
         button.addEventListener('click', async () => {
             const value = button.dataset.copy;
             if (!value) return;
-            const labelSource = button.previousElementSibling?.querySelector('[data-label]') ?? button.previousElementSibling;
+            const labelSource = button.closest('li')?.querySelector('[data-label]');
             const label = labelSource?.dataset?.label || (labelSource?.textContent?.trim() ?? 'Valor');
             try {
                 if (navigator.clipboard && navigator.clipboard.writeText) {
                     await navigator.clipboard.writeText(value);
+                    showToast(`${label} copiado!`, 'fa-check');
                 } else {
-                    fallbackCopy(value);
+                    showToast('Não foi possível copiar. Tente manualmente.', 'fa-exclamation-triangle');
                 }
-                showToast(`${label} copiado!`, 'fa-check');
             } catch (error) {
                 console.error('Erro ao copiar para a área de transferência:', error);
                 showToast('Não foi possível copiar. Tente manualmente.', 'fa-exclamation-triangle');
@@ -167,7 +134,3 @@
         });
     }
 })();
-
-
-
-
