@@ -12,7 +12,7 @@ Este projeto contém a versão digital do currículo de Lauro Pereira da Motta, 
 - **Acessibilidade** com `aria-*`, `prefers-reduced-motion` e semântica HTML5.
 
 ## Estrutura
-- `curriculos.html`: markup principal do currículo.
+- `index.html`: markup principal do currículo.
 - `css/style.css`: estilos globais e responsivos (header, sidebar, projetos, cursos).
 - `css/print.css`: ajustes específicos para impressão/PDF.
 - `js/main.js`: interatividade (tema, navegação, clipboard, voltar ao topo).
@@ -20,4 +20,4 @@ Este projeto contém a versão digital do currículo de Lauro Pereira da Motta, 
 - `roadmap/ROADMAP.md`: plano de evolução do projeto.
 
 ## Como usar
-Abra `curriculos.html` em qualquer navegador moderno. Para exportar em PDF, use o botão de download no header e, no diálogo de impressão, escolha "Salvar como PDF".
+Abra `index.html` em qualquer navegador moderno. Para exportar em PDF, use o botão de download no header e, no diálogo de impressão, escolha "Salvar como PDF".

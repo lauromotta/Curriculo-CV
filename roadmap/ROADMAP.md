@@ -79,18 +79,20 @@ HEADER (full-width, gradiente)
 - [x] 3.4 Descrição NimFlow (stack + problema resolvido)
 
 ### 🟢 FASE 4 — Técnico / Deploy
-- [ ] 4.1 Self-host Poppins + font-display: swap
-- [ ] 4.2 FA 5 → FA 6 (ou Lucide SVG)
-- [ ] 4.3 Meta tags SEO + OG + JSON-LD Person
-- [ ] 4.4 Favicon + manifest.json
-- [ ] 4.5 curriculos.html → index.html (GitHub Pages)
-- [ ] 4.6 prefers-reduced-motion
-- [ ] 4.7 Remover execCommand
+- [x] 4.1 Self-host Poppins + font-display: swap (woff2 em assets/fonts)
+- [x] 4.2 FA 5 → FA 6 (cdnjs 6.5.2, classes compatíveis)
+- [x] 4.3 Meta tags SEO + OG + Twitter + JSON-LD Person
+- [x] 4.4 Favicon + manifest.json + apple-touch-icon (icon-192.png)
+- [x] 4.5 curriculos.html → index.html (GitHub Pages)
+- [x] 4.6 prefers-reduced-motion (feito na Fase 2)
+- [x] 4.7 Remover execCommand (feito na Fase 2)
 
 ### 🔵 FASE 5 — PDF & Analytics
 - [ ] 5.1 PDF no CI (GitHub Actions + Puppeteer)
 - [ ] 5.2 Analytics Umami/Plausible
 - [ ] 5.3 Domínio próprio (opcional)
+
+> **Deploy**: habilitar GitHub Pages na branch `main` (raiz `/`) para servir em `https://lauromotta.github.io/Curriculo-CV/`. As meta tags OG/canonical já apontam para esse domínio.
 
 ---
 
