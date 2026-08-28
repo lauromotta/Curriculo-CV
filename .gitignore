@@ -8,3 +8,7 @@ v2_page_*.png
 # Sistema operacional
 Thumbs.db
 .DS_Store
+
+# Node (geração de PDF no CI / local)
+node_modules/
+package-lock.json
