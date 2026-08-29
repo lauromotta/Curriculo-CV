@@ -1,6 +1,6 @@
 ﻿# Currículo - Lauro Motta
 
-Este projeto contém a versão digital do currículo de Lauro Pereira da Motta, funcionando como **portfólio complementar**: além dos dados profissionais, destaca projetos reais em produção (NimFlow AI Proxy) e o perfil no GitHub.
+Este projeto contém a versão digital do currículo de Lauro Motta, funcionando como **portfólio complementar**: além dos dados profissionais, destaca projetos reais em produção (NimFlow AI Proxy) e o perfil no GitHub.
 
 ## Destaques
 - **Header de impacto** full-width com foto local, nome, cargo e contato (incl. GitHub e NimFlow).

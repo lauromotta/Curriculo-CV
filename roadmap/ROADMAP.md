@@ -30,10 +30,10 @@ Perfil técnico de verdade: lidera infraestrutura **e** constrói software real 
 
 ```
 HEADER (full-width, gradiente)
-  [FOTO]  Lauro Pereira da Motta
+  [FOTO]  Lauro Motta
           Supervisor de TI · Analista de Infraestrutura
           📍 Rio de Janeiro/RJ
-          📱 (21) 98718-9591 · ✉️ lauropmotta@gmail.com
+          📱 Contato (WhatsApp) · ✉️ lauropmotta@gmail.com
           🔗 github.com/lauromotta · 🌐 nim-flow.onrender.com
 ├─ SIDEBAR (30%)
 │   📋 Contato & Dados
