@@ -88,8 +88,8 @@ HEADER (full-width, gradiente)
 - [x] 4.7 Remover execCommand (feito na Fase 2)
 
 ### 🔵 FASE 5 — PDF & Analytics
-- [ ] 5.1 PDF no CI (GitHub Actions + Puppeteer)
-- [ ] 5.2 Analytics Umami/Plausible
+- [x] 5.1 PDF no CI (GitHub Actions + Puppeteer)
+- [ ] 5.2 Analytics Umami/Plausible — ❌ DESCARTADO (decisão do usuário: manter tudo no GitHub, sem script/tracker de terceiros no site)
 - [ ] 5.3 Domínio próprio (opcional)
 
 > **Deploy**: habilitar GitHub Pages na branch `main` (raiz `/`) para servir em `https://lauromotta.github.io/Curriculo-CV/`. As meta tags OG/canonical já apontam para esse domínio.
