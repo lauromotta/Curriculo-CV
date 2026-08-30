@@ -81,7 +81,12 @@
                 </figure>
                 <div class="site-header__text">
                     <h1>Lauro Motta</h1>
-                    <p class="tagline">Supervisor de TI · Analista de Infraestrutura / Sistemas</p>
+                    <p class="tagline">Supervisor de TI · Infraestrutura · Cloud &amp; DevOps</p>
+                    <p class="freelance-badge" aria-label="Disponível para trabalho freelance">
+                        <span class="freelance-badge__dot" aria-hidden="true"></span>
+                        Disponível para freelance
+                    </p>
+                    <p class="hero-positioning">Mais de 10 anos de experiência em infraestrutura, redes e ERP, liderando equipes e entregando cloud e DevOps em produção.</p>
                     <ul class="header-contact">
                         <li>
                             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
@@ -123,6 +128,20 @@
                 </div>
             </div>
         </header>
+        <section class="metrics" id="metricas" aria-label="Métricas em destaque">
+            <div class="metric-card" role="group" aria-label="10 ou mais anos de experiência">
+                <span class="metric-value">
+                    <span class="metric-number" data-value="10">10</span><span class="metric-suffix">+</span>
+                </span>
+                <span class="metric-label">Anos de experiência</span>
+            </div>
+            <div class="metric-card" role="group" aria-label="3 certificações profissionais">
+                <span class="metric-value">
+                    <span class="metric-number" data-value="3">3</span>
+                </span>
+                <span class="metric-label">Certificações</span>
+            </div>
+        </section>
         <div class="page-body">
             <aside class="sidebar">
                 <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" checked />
@@ -162,27 +181,16 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="sidebar-section">
-                        <h2>Competências Essenciais</h2>
-                        <ul class="skills-top">
-                            <li class="skill-tag skill-tag--primary"><i class="fas fa-chart-line" aria-hidden="true"></i> ERP Sankhya (módulos, BI, JasperReports)</li>
-                            <li class="skill-tag"><i class="fas fa-server" aria-hidden="true"></i> Windows Server (AD, DFS, WSUS, IIS, DNS)</li>
-                            <li class="skill-tag"><i class="fas fa-cloud" aria-hidden="true"></i> Azure · Terraform · DevOps</li>
-                            <li class="skill-tag"><i class="fas fa-network-wired" aria-hidden="true"></i> Redes · MikroTik · pfSense</li>
-                            <li class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i> SQL Server · MySQL · MongoDB</li>
-                            <li class="skill-tag"><i class="fas fa-boxes" aria-hidden="true"></i> Docker · Kubernetes</li>
+                    <details class="other-skills">
+                        <summary>Outras habilidades <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                        <ul class="info-list compact-list">
+                            <li><i class="fas fa-desktop" aria-hidden="true"></i><span><strong>Sistemas Operacionais:</strong> Windows, Linux</span></li>
+                            <li><i class="fas fa-file-alt" aria-hidden="true"></i><span><strong>Pacote Office:</strong> Excel (incl. BI), Word, PowerPoint</span></li>
+                            <li><i class="fas fa-code" aria-hidden="true"></i><span><strong>Programação:</strong> HTML, CSS, Bootstrap 5, JavaScript, Python, Flask, PHP (básico), Java (básico)</span></li>
+                            <li><i class="fas fa-code-branch" aria-hidden="true"></i><span><strong>Versionamento:</strong> Git, GitHub</span></li>
+                            <li><i class="fas fa-exchange-alt" aria-hidden="true"></i><span><strong>APIs:</strong> Testes com Postman</span></li>
                         </ul>
-                        <details class="other-skills">
-                            <summary>Outras habilidades <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
-                            <ul class="info-list compact-list">
-                                <li><i class="fas fa-desktop" aria-hidden="true"></i><span><strong>Sistemas Operacionais:</strong> Windows, Linux</span></li>
-                                <li><i class="fas fa-file-alt" aria-hidden="true"></i><span><strong>Pacote Office:</strong> Excel (incl. BI), Word, PowerPoint</span></li>
-                                <li><i class="fas fa-code" aria-hidden="true"></i><span><strong>Programação:</strong> HTML, CSS, Bootstrap 5, JavaScript, Python, Flask, PHP (básico), Java (básico)</span></li>
-                                <li><i class="fas fa-code-branch" aria-hidden="true"></i><span><strong>Versionamento:</strong> Git, GitHub</span></li>
-                                <li><i class="fas fa-exchange-alt" aria-hidden="true"></i><span><strong>APIs:</strong> Testes com Postman</span></li>
-                            </ul>
-                        </details>
-                    </section>
+                    </details>
                     <section class="sidebar-section">
                         <h2>Certificações</h2>
                         <ul class="info-list compact-list">
@@ -219,6 +227,7 @@
                 <nav class="quick-nav" aria-label="Navegação rápida">
                     <button type="button" class="quick-nav__item" data-target="#spotlight">Pretensão</button>
                     <button type="button" class="quick-nav__item" data-target="#resumo">Resumo</button>
+                    <button type="button" class="quick-nav__item" data-target="#especialidades">Especialidades</button>
                     <button type="button" class="quick-nav__item" data-target="#experiencia">Experiência</button>
                     <button type="button" class="quick-nav__item" data-target="#projetos">Projetos</button>
                     <button type="button" class="quick-nav__item" data-target="#formacao">Formação</button>
@@ -239,12 +248,63 @@
                 </section>
                 <section class="section" id="resumo">
                     <h2>Resumo Profissional</h2>
-                    <p>Profissional de TI com mais de 10 anos de experiência em gestão de infraestrutura, suporte avançado, redes e implantação de ERP (Sankhya). Pós-graduado em Engenharia de Software e graduado em Análise e Desenvolvimento de Sistemas (Estácio de Sá).</p>
-                    <p>Atuação na liderança de equipes de TI, administração de servidores (Windows Server/Linux), cloud computing (Azure com Terraform) e contêineres (Docker/Kubernetes). Além da atuação corporativa, desenvolvo software em produção — como o <a href="https://nim-flow.onrender.com/" target="_blank" rel="noopener">NimFlow</a>, proxy de IA OpenAI↔NVIDIA NIM com RBAC e Supabase — provando domínio prático de desenvolvimento, APIs e arquitetura.</p>
+                    <p>Profissional de TI com mais de 10 anos de experiência em gestão de infraestrutura, suporte avançado, redes e implantação de ERP (Sankhya). Pós-graduado em Engenharia de Software e graduado em Análise e Desenvolvimento de Sistemas (Estácio de Sá). Trajetória construída em diferentes empresas, de Analista de Sistemas a Supervisor de TI, passando por suporte, redes e infraestrutura — um padrão de carreira que sustenta a atuação atual em liderança técnica, alta disponibilidade e segurança.</p>
+                </section>
+                <section class="section" id="especialidades">
+                    <h2>Competências Essenciais</h2>
+                    <div class="specialty-grid">
+                        <article class="specialty-card">
+                            <div class="specialty-card__header">
+                                <span class="specialty-card__icon"><i class="fas fa-server" aria-hidden="true"></i></span>
+                                <h3 class="specialty-card__title">Infraestrutura</h3>
+                            </div>
+                            <p class="specialty-card__context">Manutenção e disponibilidade de ambientes corporativos</p>
+                            <ul class="specialty-card__list">
+                                <li>Windows Server (AD, DFS, WSUS, IIS, DNS)</li>
+                                <li>Redes · MikroTik · pfSense</li>
+                            </ul>
+                        </article>
+                        <article class="specialty-card">
+                            <div class="specialty-card__header">
+                                <span class="specialty-card__icon"><i class="fas fa-cloud" aria-hidden="true"></i></span>
+                                <h3 class="specialty-card__title">Cloud &amp; DevOps</h3>
+                            </div>
+                            <p class="specialty-card__context">Provisionamento e automação de infraestrutura em nuvem</p>
+                            <ul class="specialty-card__list">
+                                <li>Azure · Terraform · DevOps</li>
+                                <li>Docker · Kubernetes</li>
+                            </ul>
+                        </article>
+                        <article class="specialty-card">
+                            <div class="specialty-card__header">
+                                <span class="specialty-card__icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+                                <h3 class="specialty-card__title">Database &amp; ERP</h3>
+                            </div>
+                            <p class="specialty-card__context">Gestão e integração de dados corporativos</p>
+                            <ul class="specialty-card__list">
+                                <li>SQL Server · MySQL · MongoDB</li>
+                                <li>ERP Sankhya (módulos, BI, JasperReports)</li>
+                            </ul>
+                        </article>
+                        <article class="specialty-card">
+                            <div class="specialty-card__header">
+                                <span class="specialty-card__icon"><i class="fas fa-robot" aria-hidden="true"></i></span>
+                                <h3 class="specialty-card__title">Automação &amp; Scripting</h3>
+                            </div>
+                            <p class="specialty-card__context">Automação de rotinas e processos manuais em ambiente corporativo</p>
+                            <ul class="specialty-card__list">
+                                <li>Python (scripts e automações)</li>
+                                <li>PowerShell</li>
+                            </ul>
+                        </article>
+                    </div>
                 </section>
                 <section class="section" id="experiencia">
                     <h2>Experiência Profissional</h2>
-                    <article class="experience-item">
+                    <ol class="timeline" aria-label="Percurso profissional">
+                        <li class="timeline-item" aria-label="12/2024 – atual">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="experience-item">
                         <header class="experience-header">
                             <div class="experience-heading">
                                 <h3>Supervisor de Tecnologia da Informação</h3>
@@ -263,6 +323,9 @@
                             <li>Faço gestão de orçamento, planejamento de aquisições e negociação com fornecedores.</li>
                         </ul>
                     </article>
+                </li>
+                <li class="timeline-item" aria-label="06/2024 – 09/2024">
+                    <span class="timeline-dot" aria-hidden="true"></span>
                     <article class="experience-item">
                         <header class="experience-header">
                             <div class="experience-heading">
@@ -281,6 +344,9 @@
                             <li>Configuração e monitoramento de rotinas de backup e testes de restauração.</li>
                         </ul>
                     </article>
+                </li>
+                <li class="timeline-item" aria-label="04/2021 – 09/2023">
+                    <span class="timeline-dot" aria-hidden="true"></span>
                     <article class="experience-item">
                         <header class="experience-header">
                             <div class="experience-heading">
@@ -299,6 +365,9 @@
                             <li>Gestão da infraestrutura de TI (servidores, redes, storage) e melhorias contínuas.</li>
                         </ul>
                     </article>
+                </li>
+                <li class="timeline-item" aria-label="01/2017 – 01/2021">
+                    <span class="timeline-dot" aria-hidden="true"></span>
                     <article class="experience-item">
                         <header class="experience-header">
                             <div class="experience-heading">
@@ -316,6 +385,9 @@
                             <li>Treinamento de usuários e criação de materiais de capacitação.</li>
                         </ul>
                     </article>
+                </li>
+                <li class="timeline-item" aria-label="01/2011 – 08/2016">
+                    <span class="timeline-dot" aria-hidden="true"></span>
                     <article class="experience-item">
                         <header class="experience-header">
                             <div class="experience-heading">
@@ -333,6 +405,8 @@
                             <li>Integração de sistemas e resolução de problemas de compatibilidade.</li>
                         </ul>
                     </article>
+                </li>
+            </ol>
                 </section>
                 <section class="section" id="projetos">
                     <h2>Projetos em Destaque</h2>

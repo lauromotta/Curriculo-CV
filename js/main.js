@@ -121,6 +121,50 @@
         });
     });
 
+    const metricNumbers = Array.from(document.querySelectorAll('.metric-number'));
+
+    if (metricNumbers.length) {
+        const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const animateCount = (element) => {
+            const target = parseInt(element.dataset.value, 10);
+            if (Number.isNaN(target)) {
+                element.textContent = element.dataset.value ?? '0';
+                return;
+            }
+            const duration = 1200;
+            const startTime = performance.now();
+            const step = (now) => {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                element.textContent = Math.round(eased * target).toString();
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            };
+            requestAnimationFrame(step);
+        };
+
+        if (prefersReducedMotion) {
+            metricNumbers.forEach((element) => {
+                element.textContent = element.dataset.value ?? '0';
+            });
+        } else {
+            const metricObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.4,
+            });
+
+            metricNumbers.forEach((element) => {
+                metricObserver.observe(element);
+            });
+        }
+    }
+
     if (backToTop) {
         const toggleBackToTop = () => {
             const shouldShow = window.scrollY > 360;
