@@ -415,6 +415,14 @@
                             <div class="project-card__badge">Principal</div>
                             <h3>NimFlow — AI Proxy</h3>
                             <p class="project-card__desc">Proxy OpenAI↔NVIDIA NIM em produção, com RBAC e persistência em Supabase. Roteia múltiplos modelos de IA por uma API unificada, com autenticação e controle de acesso por papel.</p>
+                            <ul class="project-card__features">
+                                <li>Rotação automática entre mais de 100 chaves NVIDIA — quando uma atinge o limite, troca para a próxima sem interromper o cliente.</li>
+                                <li>Streaming real token a token, sem buffer, com overhead de streaming próximo de zero.</li>
+                                <li>Autenticação própria: tokens dos clientes armazenados como hash SHA-256, chaves NVIDIA nunca expostas.</li>
+                                <li>Retry automático com backoff exponencial para erros de rate limit, timeout e sobrecarga (erros de payload retornam imediatamente).</li>
+                                <li>Logs de cada requisição no Supabase (cliente, modelo, timestamp) para análise de uso.</li>
+                                <li>Compatível como substituto direto do SDK da OpenAI — funciona com Python SDK, Continue, Cursor, LangChain (só troca a URL base).</li>
+                            </ul>
                             <ul class="project-card__stack">
                                 <li>FastAPI</li>
                                 <li>NVIDIA NIM</li>

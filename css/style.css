@@ -877,6 +877,12 @@ body[data-theme='dark'] .experience-list strong {
     grid-row: 1 / span 2;
 }
 
+/* Permite o card featured (mais rico) ser mais alto que a soma dos dois cards
+   da direita, sem esticá-los para dentro de vãos vazios. */
+.project-card:not(.project-card--featured) {
+    align-self: start;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -925,6 +931,18 @@ body[data-theme='dark'] .experience-list strong {
     font-size: 0.92rem;
     color: var(--muted);
     line-height: 1.65;
+}
+
+.project-card__features {
+    list-style: disc;
+    padding-left: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--muted);
 }
 
 .project-card__stack {
