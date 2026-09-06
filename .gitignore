@@ -1,5 +1,8 @@
-# PDFs exportados da Catho (fonte de referência, não fazem parte do site)
+# PDFs de referência da Catho e artefatos temporários (não fazem parte do repo)
 *.pdf
+
+# Exceção: o PDF do currículo final é entregue no repo
+!Curriculo-Lauro-Motta.pdf
 
 # Arquivos temporários de renderização
 page_*.png
@@ -9,6 +12,12 @@ v2_page_*.png
 Thumbs.db
 .DS_Store
 
-# Node (geração de PDF no CI / local)
+# Node (dependências instaladas via npm install no CI/local)
 node_modules/
-package-lock.json
+
+# Backups e lixo gerado por ferramentas
+*.bak
+*.orig
+
+# Mockups de design (mesa de rascunho — não são produto)
+mockups/

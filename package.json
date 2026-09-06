@@ -4,10 +4,6 @@
   "private": true,
   "description": "Currículo / Portfólio web de Lauro Motta",
   "type": "module",
-  "scripts": {
-    "pdf": "node scripts/generate-pdf.mjs"
-  },
-  "dependencies": {
-    "puppeteer": "^24.0.0"
-  }
+  "scripts": {},
+  "dependencies": {}
 }

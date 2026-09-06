@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículo — Lauro Motta · Analista de Infraestrutura / Sistemas</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #0b6181;
+    --line: #ddd;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink); background: #fff; line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12.5px;
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 40px 46px; }
+
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 16px; margin-bottom: 18px; }
+  h1 { font-size: 26px; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .role { font-size: 15px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .contact { font-size: 12px; color: var(--muted); }
+  .contact a { color: var(--ink); text-decoration: none; }
+  .contact span { margin-right: 14px; white-space: nowrap; }
+
+  section { margin-bottom: 18px; }
+  h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--accent); margin-bottom: 8px;
+    padding-bottom: 3px; border-bottom: 1px solid var(--line);
+  }
+
+  .summary { font-size: 12.5px; color: #333; }
+
+  .job { margin-bottom: 12px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-size: 13px; font-weight: 700; }
+  .job-company { color: var(--accent); font-weight: 600; font-size: 13px; }
+  .job-date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+  .job-sub { color: var(--muted); font-size: 11.5px; margin: 1px 0 4px; }
+  ul { padding-left: 18px; }
+  li { margin-bottom: 3px; font-size: 12px; color: #333; }
+
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  .skill { font-size: 12px; }
+  .skill strong { color: var(--accent); }
+
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+
+  .edu-item, .course-item, .cert-item { font-size: 12px; margin-bottom: 4px; }
+  .edu-item strong { font-size: 12.5px; }
+  .edu-item .inst { color: var(--muted); }
+
+  .event-item { margin-bottom: 6px; }
+  .event-item .name { font-weight: 700; }
+  .event-item .yr { color: var(--accent); font-weight: 600; }
+  .event-item p { color: #444; font-size: 11.5px; }
+
+  @media print {
+    .page { padding: 0; max-width: none; }
+    body { font-size: 11.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Lauro Motta</h1>
+    <div class="role">Analista de Infraestrutura / Analista de Sistemas</div>
+    <div class="contact">
+      <span>Rio de Janeiro / RJ</span>
+      <span>📱 (21) 98718-9591</span>
+      <span><a href="mailto:lauropmotta@gmail.com">lauropmotta@gmail.com</a></span>
+      <span><a href="https://github.com/lauromotta">github.com/lauromotta</a></span>
+      <span><a href="https://nim-flow.onrender.com/">nim-flow.onrender.com</a></span>
+    </div>
+  </header>
+
+  <section class="summary">
+    <h2>Resumo</h2>
+    <p>Profissional de TI com mais de 10 anos de experiência em infraestrutura, redes, suporte avançado, ERP (Sankhya) e cloud. Pós-graduado em Engenharia de Software, atua da administração de servidores (Windows Server/Linux) à entrega de IaC (Terraform), containers (Docker/Kubernetes), observabilidade (Prometheus/Grafana) e desenvolvimento (Python, APIs). Histórico inclui implantação de infraestrutura de eventos de grande porte e um proxy de IA em produção (NimFlow).</p>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Supervisor de TI</span> — <span class="job-company">V3tex</span></div>
+        <div class="job-date">12/2024 — atual (1 ano e 8 meses)</div>
+      </div>
+      <ul>
+        <li>Liderança da área de TI e de 1 colaborador direto, gerenciando infraestrutura para ~45 usuários em 6 servidores Windows Server + 1 Linux — alta disponibilidade, segurança e controle de acessos.</li>
+        <li>Administração do ERP Sankhya (módulos Vendas e Financeiro), relatórios em JasperReports e dashboards no Sankhya BI.</li>
+        <li>Administração de SQL Server (integridade, segurança e performance) e implantação de 2 roteadores MikroTik com mitigação de ataques.</li>
+        <li>Atendimento de média de ±30 chamados/dia (presencial/remoto); gestão de orçamento, aquisições e negociação com fornecedores.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Analista de Suporte</span> — <span class="job-company">Princesa Comércio de Alimentos</span></div>
+        <div class="job-date">06/2024 — 09/2024 (3 meses)</div>
+      </div>
+      <ul>
+        <li>Suporte técnico, administração de backups e bancos SQL Server, testes de atualização e segurança.</li>
+        <li>Responsável pela infraestrutura de TI do evento Mercado Princesa: 3 pontos de venda, 4 roteadores e cabeamento de rede.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Analista de Redes</span> — <span class="job-company">ROMA MOBILI</span></div>
+        <div class="job-date">04/2021 — 09/2023 (2 anos e 5 meses)</div>
+      </div>
+      <ul>
+        <li>Monitoramento e manutenção de redes e servidores; implantação e personalização de ERP com treinamento de usuários.</li>
+        <li>Gestão de infraestrutura (servidores, redes, storage) e melhorias contínuas.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Consultor de TI</span> — <span class="job-company">Carmem Soares Contadores (prestação de serviço)</span></div>
+        <div class="job-date">01/2017 — 01/2021 (4 anos)</div>
+      </div>
+      <ul>
+        <li>Consultoria e suporte técnico contínuos: redes, bancos de dados, treinamento de usuários e rotinas de TI.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Analista de Sistemas</span> — <span class="job-company">Sociedade Brasileira de Cardiologia</span></div>
+        <div class="job-date">01/2011 — 08/2016 (5 anos e 7 meses)</div>
+      </div>
+      <ul>
+        <li>Testes, manutenção e integração de sistemas; análise de dados e apoio à decisão.</li>
+        <li>Implantação da infraestrutura do Congresso SBC (Brasília/2016): rede cabeada sob o piso, provisionamento de estações e suporte à operação (30 dias de montagem + 4 de evento).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Competências Técnicas</h2>
+    <div class="skills-grid">
+      <span class="skill"><strong>Sistemas &amp; Cloud:</strong> Windows Server, Linux, Azure, Google Cloud, Oracle Cloud (OCI)</span>
+      <span class="skill"><strong>Infra &amp; IaC:</strong> Terraform, Docker, Kubernetes, CI/CD, Bash/Shell, Git</span>
+      <span class="skill"><strong>Observabilidade:</strong> Prometheus, Grafana</span>
+      <span class="skill"><strong>Bancos de Dados:</strong> SQL Server, MySQL, MongoDB, Supabase</span>
+      <span class="skill"><strong>ERP &amp; BI:</strong> Sankhya, JasperReports, Power BI</span>
+      <span class="skill"><strong>Desenvolvimento:</strong> Python, Flask, JavaScript, HTML/CSS, APIs</span>
+      <span class="skill"><strong>Redes &amp; Segurança:</strong> TCP/IP, MikroTik, pfSense, WLAN/LAN</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Participações &amp; Eventos</h2>
+    <div class="event-item">
+      <span class="name">Congresso SBC — Brasília</span> <span class="yr">(2016)</span>
+      <p>Implantação da infraestrutura (rede, estações, sistemas) do primeiro andar do evento de grande porte.</p>
+    </div>
+    <div class="event-item">
+      <span class="name">Evento Mercado Princesa — Rio de Janeiro</span> <span class="yr">(2024)</span>
+      <p>Estrutura de TI: 3 PDVs, 4 roteadores e cabeamento de rede.</p>
+    </div>
+    <div class="event-item">
+      <span class="name">Hackathon Recode Pro</span> <span class="yr">(~2020/2021)</span>
+      <p>Participante em maratona de desenvolvimento e tecnologia.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formação</h2>
+    <div class="edu-item"><strong>Pós-graduação — Engenharia de Software</strong> <span class="inst">— Universidade Estácio de Sá</span></div>
+    <div class="edu-item"><strong>Graduação — Análise e Desenvolvimento de Sistemas</strong> <span class="inst">— Universidade Estácio de Sá</span></div>
+  </section>
+
+  <section>
+    <h2>Certificações</h2>
+    <div class="cert-item">Scrum Foundation Professional Certificate (SFPC) — CertiProf (2024)</div>
+    <div class="cert-item">Remote Work Professional — CertiProf (2024)</div>
+    <div class="cert-item">DevOps Essentials — CertiProf (2023)</div>
+  </section>
+
+  <section>
+    <h2>Cursos Complementares</h2>
+    <div class="col2">
+      <div>
+        <div class="course-item">Terraform no Azure — IaC e DevOps (Udemy)</div>
+        <div class="course-item">Git e GitHub Essencial (Udemy)</div>
+        <div class="course-item">Formação em Redes de Computadores (Udemy)</div>
+        <div class="course-item">Firewall pfSense (Udemy)</div>
+      </div>
+      <div>
+        <div class="course-item">Programação em Python (Udemy)</div>
+        <div class="course-item">Excel Avançado, Macro e VBA + Power BI (Udemy)</div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
